@@ -4,10 +4,12 @@ namespace App\Http\Controllers\Book;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\BookFormRequest;
+use App\Mail\Book\BookingMail;
 use App\Models\Book;
 use App\Models\City;
 use App\Models\Type;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class BookController extends Controller
 {
@@ -34,7 +36,13 @@ class BookController extends Controller
         $book->type()->associate(Type::whereUuid($request->type)->first());
         $book->save();
 
+        Mail::to('abdelgha4or@gmail.com')->send(new BookingMail($request->validated()));
 
-        return redirect()->back()->with('success', "Merci votre demande a été envoyer avec succès");
+        if (empty(Mail::flushMacros())) {
+
+            return redirect()->back()->with('success', "Merci votre demande a été envoyer avec succès");
+        } else {
+            return redirect()->back()->with('error', "Erreur de réservation merci de ressayer");
+        }
     }
 }

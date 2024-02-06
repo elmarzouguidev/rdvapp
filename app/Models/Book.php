@@ -15,6 +15,10 @@ class Book extends Model
 
     protected $fillable = ['book_number'];
 
+    protected $casts = [
+        'book_date' => 'date',
+    ];
+    
     public function city()
     {
         return $this->belongsTo(City::class);
