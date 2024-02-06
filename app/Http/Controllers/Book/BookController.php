@@ -36,7 +36,7 @@ class BookController extends Controller
         $book->type()->associate(Type::whereUuid($request->type)->first());
         $book->save();
 
-        Mail::to('abdelgha4or@gmail.com')->send(new BookingMail($request->validated()));
+        Mail::to('Ofkir.soukaina@gmail.com')->send(new BookingMail($request->validated()));
 
         if (empty(Mail::flushMacros())) {
 
