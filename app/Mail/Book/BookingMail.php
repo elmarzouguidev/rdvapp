@@ -28,8 +28,8 @@ class BookingMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('rdv@aika.ma', 'AIKA réservation RDV ' . $this->data['name']),
-            subject: 'Demande de RDV',
+            from: new Address('rdv@aika.ma', 'AIKA réservation ' . $this->data['name']),
+            subject: 'Demande de RDV ' . $this->data['name'],
         );
     }
 
