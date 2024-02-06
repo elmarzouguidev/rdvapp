@@ -15,17 +15,18 @@ return new class extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
+            $table->uuid()->nullable();
             $table->foreignIdFor(City::class)->index()->nullable()->constrained()->nullOnDelete();
             $table->foreignIdFor(Type::class)->index()->nullable()->constrained()->nullOnDelete();
             $table->string('name');
-            $table->string('email')->nullable()->unique();
-            $table->string('phone', 20)->nullable()->unique();
+            $table->string('email')->nullable();
+            $table->string('phone', 20)->nullable();
             $table->string('age', 10)->nullable();
             $table->longText('address')->nullable();
             $table->date('book_date');
             $table->time('book_time');
             $table->json('options')->nullable();
-            $table->increments('book_number')->default(0);
+            $table->unsignedBigInteger('book_number')->default(0);
             $table->timestamps();
         });
     }
