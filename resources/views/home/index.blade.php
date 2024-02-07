@@ -4,18 +4,15 @@
         <div class="section-center">
             <div class="container">
                 <div class="row">
-
-                    <div class="booking-form">
+                    <div class="booking-form mt-5">
                         @if (session('success'))
                             <div class="col-lg-12">
-
                                 <div class="alert alert-success" role="alert" style="font-size: 30px;">
 
                                     <i class="mdi mdi-check-all me-2"></i>
                                     {{ session('success') }}
 
                                 </div>
-
                             </div>
                         @endif
                         @if (session('error'))
@@ -34,7 +31,7 @@
                         <form action="{{ route('book.store') }}" method="post">
                             @csrf
                             @honeypot
-                            <div class="col-md-6">
+                            <div class="col-md-6 ">
                                 <div class="form-group">
                                     <input class="form-control @error('name') is-invalid @enderror" type="text"
                                         name="name" required placeholder="Enter votre nom complet"
