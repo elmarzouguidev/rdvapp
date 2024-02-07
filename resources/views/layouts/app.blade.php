@@ -11,8 +11,10 @@
     <meta content="app_creator" name="Elmarzougui Abdelghafour WEDOAPP" />
     <meta content="app_version" name="1.1" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-
-    <link rel="shortcut icon" href="{{ asset('images/logo-app-2.png') }}">
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex,nofollow" />
+    <meta name="google" content="notranslate" />
+    <link rel="shortcut icon" href="{{ asset('assets/img/logo-aika-site.png') }}">
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
 
@@ -20,7 +22,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
 
     <!-- Custom stlylesheet -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}?ver={{ rand(125, 800) }}" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

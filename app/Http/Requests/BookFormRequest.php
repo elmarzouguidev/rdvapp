@@ -26,7 +26,7 @@ class BookFormRequest extends FormRequest
             'phone' => ['required', 'string', 'max:30', 'phone:MA'],
             'address' => ['required', 'string'],
             'type' => ['required', 'uuid', 'exists:types,uuid'],
-            'city' => ['required', 'uuid', 'exists:cities,uuid'],
+            'city' => ['nullable', 'uuid', 'exists:cities,uuid'],
             'book_date' => ['required', 'date', 'after_or_equal:today'],
             'book_time' => ['required', 'date_format:H:i']
         ];

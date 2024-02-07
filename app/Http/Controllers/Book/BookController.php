@@ -32,7 +32,7 @@ class BookController extends Controller
         $book->address = $request->address;
         $book->book_date = $request->date('book_date');
         $book->book_time = $request->date('book_time');
-        $book->city()->associate(City::whereUuid($request->city)->first());
+        $book->city()->associate(City::first());
         $book->type()->associate(Type::whereUuid($request->type)->first());
         $book->save();
 
