@@ -7,3 +7,6 @@
 <p> <b>Date de réservation : {{ Carbon\Carbon::parse($data['book_date'])->format('d/m/Y') }}</b></p>
 <br>
 <p><b>Heure de réservation : {{ $data['book_time'] }}</b></p>
+
+<br>
+<p><b>POLE : {{ $data['pole']['name'] }}</b></p>

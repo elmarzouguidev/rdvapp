@@ -19,7 +19,6 @@ class BookingMail extends Mailable
      */
     public function __construct(public $data)
     {
-        //
     }
 
     /**

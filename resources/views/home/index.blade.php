@@ -5,18 +5,18 @@
             <div class="container">
                 <div class="row">
                     <div class="booking-form">
+                        @if (session('success'))
+                            <div class="col-lg-12">
 
-                        <div class="col-lg-12">
-                            @if (session('success'))
                                 <div class="alert alert-success" role="alert" style="font-size: 30px;">
 
                                     <i class="mdi mdi-check-all me-2"></i>
                                     {{ session('success') }}
 
                                 </div>
-                            @endif
-                        </div>
 
+                            </div>
+                        @endif
                         <form action="{{ route('book.store') }}" method="post">
                             @csrf
                             @honeypot
