@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>AIKA réservation</title>
+    <title>AIKA Prendre un rendez-vous</title>
     <meta content="app_creator" name="Elmarzougui Abdelghafour WEDOAPP" />
     <meta content="app_version" name="1.1" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
