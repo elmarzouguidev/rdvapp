@@ -36,7 +36,7 @@ class BookFormRequest extends FormRequest
     {
         return [
             'book_date.after' => "la date de réservation doit être après aujourd'hui",
-            'book_date.after_or_equal' => "la date de réservation doit être aujourd'hui ou  après aujourd'hui",
+            'book_date.after_or_equal' => "la date de réservation doit être aujourd'hui ou après aujourd'hui",
         ];
     }
 }
