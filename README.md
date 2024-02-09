@@ -23,6 +23,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Credits
 
 -   [Laravel](https://laravel.com/)
+-   [Colorlib](https://colorlib.com/wp/template/colorlib-booking-7/)
 
 ## Screenshots : 
 
@@ -36,13 +37,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 -   [LinkedIn](https://www.linkedin.com/in/devscript)
 -   [GitHub](https://www.github.com/elmarzouguidev)
 
-## Donate
-
-If you like this project, leave a star and share it with your friends.
-
 ## Contributors
 
 | Contributor | GitHub Profile |
 | --- | --- |
 
-| [elmarzouguidev](https://github.com/elmarzouguidev) | [![Avatar](https://github.com/elmarzouguidev.png?size=50)](https://github.com/elmarzouguidev) |
+| [elmarzouguidev](https://github.com/elmarzouguidev) |
